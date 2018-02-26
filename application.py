@@ -1,9 +1,9 @@
 from flask import Flask
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 
-@app.route('/')
+@application.route('/')
 def hello_world():
     name = "Jon Snow"
     return "Hello world! My name is " + name
